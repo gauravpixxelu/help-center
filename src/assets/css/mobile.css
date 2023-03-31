@@ -1,0 +1,40 @@
+@media screen and (max-width:767px) {
+
+    /*-- Website Css --*/ 
+    .custom-btn {
+        font-size: 14px;
+    }
+    /*-- Website Css --*/ 
+
+    /*-- Header Css --*/ 
+    .site-header .navbar {
+        flex-wrap: unset;
+    }
+    /*-- Header Css --*/ 
+
+
+    /*-- Vertical Tabs Css --*/ 
+    .hamburger-mobile img {
+        width: 36px;
+    }
+    .hamburger-mobile {
+        display: inline-block;
+        background: #ed1b24;
+        position: absolute;
+        z-index: 9999;
+        top: 15px;
+        padding: 20px;
+        right: 0;
+    }    
+    .vertical-gd {
+        transform: translateX(-300px);
+        transition: 0.6s;
+        box-shadow: 0px 12px 23px 0px rgb(0 0 0 / 5%);
+    }    
+    .vertical-tabs .tab-content {
+        width: 100%;
+        padding: 0 15px;
+    }
+    /*-- Vertical Tabs Css --*/ 
+
+}
