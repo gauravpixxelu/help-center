@@ -1,4 +1,5 @@
 import React from 'react';
+import Menu from './Menu';
 
 function TurnAroundRecovery() {
 	return (
@@ -9,9 +10,7 @@ function TurnAroundRecovery() {
 			{/* Ultimate User Guide Section Starts */}
 
 			<section className="vertical-tabs">
-				<div class="hamburger-mobile">
-					<img src="icons/hamburger.svg" alt="" />
-				</div>
+				<Menu />
 
 				<nav className="vertical-gd">
 					<div className="nav flex-column nav-tabs mb-3" id="nav-tab" role="tablist" aria-orientation="vertical">
@@ -113,6 +112,158 @@ function TurnAroundRecovery() {
 					<div className="tab-pane fade" id="module5" role="tabpanel" aria-labelledby="module5-tab">
 						<div className="tab-txts">
 							<h2 className="hdng">The Turnaround and Recovery Survey</h2>
+							<div className="tab-blocks">
+								<div className="row">
+									<div className="col-md-8">
+										<h5 className="hdng-h5">Company size: Large, Turnover above 51m</h5>
+										<p className="hdng-16">The survey and report are based on research gathered over the last 20 years studying more than 1300 business turnaround programs. The results will help you as a business owner strategize and execute a successful turnaround plan. Easily establish what is needed to get any business back on track and grow above that of your industry peers. This report and results represent a collection of existing turnaround studies aimed at leveraging best practice insights gained together with the results from your survey.</p>
+									</div>
+									<div className="col-md-4">
+										<img src="images/large-business.jpg" alt="" />
+									</div>
+								</div>
+							</div>
+
+							<div className="tab-blocks">
+								<nav>
+									<div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+										<button class="nav-link active" id="efficiencies-tab" data-bs-toggle="tab" data-bs-target="#efficiencies" type="button" role="tab" aria-controls="efficiencies" aria-selected="true">Module 1</button>
+										<button class="nav-link" id="retrenchment-tab" data-bs-toggle="tab" data-bs-target="#retrenchment" type="button" role="tab" aria-controls="retrenchment" aria-selected="false">Module 2</button>
+										<button class="nav-link" id="alignment-tab" data-bs-toggle="tab" data-bs-target="#alignment" type="button" role="tab" aria-controls="alignment" aria-selected="false">Module 3</button>
+										<button class="nav-link" id="management-tab" data-bs-toggle="tab" data-bs-target="#management" type="button" role="tab" aria-controls="management" aria-selected="true">Module 4</button>
+									</div>
+
+								</nav>
+								<div class="tab-content col3-tab" id="nav-tabContent">
+									<div class="tab-pane fade active show" id="efficiencies" role="tabpanel" aria-labelledby="efficiencies-tab">
+										<div className="row">
+											<div className="col-md-4">
+												<div className="tab-cnt">
+													<h4>Cost Efficiencies Strategy</h4>
+													<p className="hdng-16">Cost efficiencies include a varied range of actions, which can all be characterised as “belt-tightening” or “fire-fighting”, with the aim of producing “quick-wins” in order to either stabilise finances in the short-term until more complex strategies are devised or to quickly improve cash flow.</p>
+													<h5>Development Tools</h5>
+													<ul className="tools">
+														<li>Cost Efficiencies Strategy</li>
+													</ul>
+												</div>
+											</div>
+											<div className="col-md-4">
+												<div className="tab-cnt middle-cnt">
+													<h5>Development Goals</h5>
+													<ul className="tools">
+														<li>Primary – Reduce R&D Expenditure</li>
+														<li>Primary – Extend Accounts Payable</li>
+														<li>Primary – Reduce Marketing Spend</li>
+														<li>Primary – Reduce the Number of Employees</li>
+														<li>Advanced – Capital Structure Rework</li>
+														<li>Advanced – Reduce Production Costs</li>
+													</ul>
+												</div>
+											</div>
+											<div className="col-md-4">
+												<div className="tab-img">
+													<img src="images/large-tab-1.jpg" alt="Large_Tab" />
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="tab-pane fade" id="retrenchment" role="tabpanel" aria-labelledby="retrenchment-tab">
+										<div className="row">
+											<div className="col-md-4">
+												<div className="tab-cnt">
+													<h4>Asset Retrenchment</h4>
+													<p className="hdng-16">Asset retrenchment is often pursued in concert with, or immediately following a cost-efficiency drive. An asset retrenchment strategy is where areas of the firm that are underperforming are appraised to determine if efficiencies can be made, or whether it is best to divest the asset completely rather than allowing it to continue operating at a weaker level than the rest of the firm.</p>
+													<h5>Development Tools</h5>
+													<ul className="tools">
+														<li>Fixed asset acquisition to total assets analysis </li>
+														<li>Repairs and maintenance to fixed assets analysis </li>
+														<li>Repairs and maintenance to sales analysis </li>
+														<li>Sales to fixed assets analysis </li>
+														<li>Net income to fixed assets analysis </li>
+													</ul>
+												</div>
+											</div>
+											<div className="col-md-4">
+												<div className="tab-cnt middle-cnt">
+													<h5>Development Goals</h5>
+													<ul className="tools">
+														<li>Improve asset utilization</li>
+														<li>Divest in underperforming assets</li>
+													</ul>
+												</div>
+											</div>
+											<div className="col-md-4">
+												<div className="tab-img">
+													<img src="images/asset-retrechment.jpg" alt="Asset_Retrechment" />
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="tab-pane fade" id="alignment" role="tabpanel" aria-labelledby="alignment-tab">
+										<div className="row">
+											<div className="col-md-4">
+												<div className="tab-cnt">
+													<h4>Core Alignment</h4>
+													<p className="hdng-16">A focus on the firm’s core activities is a strategy that entails determining the markets, products, and customers that have the potential to generate the greatest profits and refocusing the firm’s activities on these areas. Successful turnarounds have been associated with a focus on product lines for which the firm is best known, customer segments that are particularly loyal or less price-sensitive, and areas where the firm has distinct competitive strength.</p>
+													<h5>Development Tools</h5>
+													<ul className="tools">
+														<li>Market Analysis</li>
+														<li>Product Analysis</li>
+														<li>Sales Analysis</li>
+													</ul>
+												</div>
+											</div>
+											<div className="col-md-4">
+												<div className="tab-cnt middle-cnt">
+													<h5>Development Goals</h5>
+													<ul className="tools">
+														<li>Primary – Penetrate more Profits</li>
+														<li>Primary – Improve the Company’s competitive strategy</li>
+														<li>Primary – Increase Sales</li>
+													</ul>
+												</div>
+											</div>
+											<div className="col-md-4">
+												<div className="tab-img">
+													<img src="images/core-align.jpg" alt="Core_Align" />
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="tab-pane fade" id="management" role="tabpanel" aria-labelledby="management-tab">
+										<div className="row">
+											<div className="col-md-4">
+												<div className="tab-cnt">
+													<h4>Management Review</h4>
+													<p className="hdng-16">Resource and Team Management Changing the Top Management Team: In concert with CEO change, replacement of part or all of the Top Management Team (TMT) is often advocated. Indeed, many new CEO’s will bring their own trusted colleagues with them. Much of the discussion reported above regarding CEO change is echoed in the findings regarding the TMT. Therefore, to avoid repetition, we describe below only those elements that are specific to the TMT.</p>
+													<h5>Development Tools</h5>
+													<ul className="tools">
+														<li>Interview Questionnaire</li>
+														<li>Culture Analysis</li>
+													</ul>
+												</div>
+											</div>
+											<div className="col-md-4">
+												<div className="tab-cnt middle-cnt">
+													<h5>Development Goals</h5>
+													<ul className="tools">
+														<li>Primary – Review Management Team</li>
+														<li>Primary – Conduct Culture Analysis</li>
+													</ul>
+												</div>
+											</div>
+											<div className="col-md-4">
+												<div className="tab-img">
+													<img src="images/management-review.jpg" alt="Management_Review" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 

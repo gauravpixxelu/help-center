@@ -3,10 +3,19 @@
 html {
     scroll-behavior: smooth;
 }
+html::-webkit-scrollbar {
+    width: 10px;
+    background-color: #ebebeb;
+}
+html::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #ed1b24;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }
-.help-center .container {
+.help-center .container, .ask-bob .container {
     max-width: 1320px;
 }
 body .container {
@@ -64,7 +73,7 @@ p.hdng-18 {
     transition: all 0.3s ease;
 }
 .custom-btn:hover {
-    color: rgb(237 27 36);
+    color: rgb(237 27 36) !important;
 }
 .custom-btn:hover:after, .custom-btn-2:hover:after {
     top: auto;
@@ -72,7 +81,7 @@ p.hdng-18 {
     height: 100%;
  }
 .custom-btn {
-    color: #fff;
+    color: #fff !important;
     font-weight: 400;
     transition: all 0.3s ease;
     position: relative;
@@ -98,10 +107,10 @@ p.hdng-18 {
     transition: all 0.3s ease;
 }
 .custom-btn-2:hover {
-    color: #fff;
+    color: #fff !important;
 }
 .custom-btn-2 {
-    color: rgb(237 27 36);
+    color: rgb(237 27 36) !important;
     font-weight: 400;
     transition: all 0.3s ease;
     position: relative;
@@ -231,6 +240,9 @@ p.hdng-18 {
 /*-- Website Css --*/
 
 /*-- Header Css --*/
+.help-center .back-page {
+    display: none;
+}
 .site-header {
     background: #000;
 }
@@ -346,9 +358,10 @@ header.site-header.business-header {
     top: 100px;
     z-index: 1;
 }
-body.help-center header.site-header.business-header {
+body.help-center header.site-header.business-header, body.ask-bob header.site-header.business-header {
     position: relative;
 }
+
 /*-- Header Css --*/
 
 
@@ -498,6 +511,7 @@ body.help-center header.site-header.business-header {
     display: block;
     padding: 4px 0;
     position: relative;
+    transition: 0.4s;
 }
 .help-txt-content h5 {
     margin-bottom: 10px;
@@ -536,7 +550,9 @@ body.help-center header.site-header.business-header {
     -webkit-transition-timing-function: cubic-bezier(.52,1.64,.37,.66);
     transition-timing-function: cubic-bezier(.52,1.64,.37,.66);
 }
-
+.help-txt ul.site-ul li a:hover {
+    padding-left: 10px;
+}
 /*-- Help Page Css --*/
 
 
@@ -556,6 +572,7 @@ body.help-center header.site-header.business-header {
     height: 100vh;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding-bottom: 8rem;
 }
 .vertical-tabs .tab-content {
     width: calc(100% - 300px);
@@ -660,11 +677,136 @@ body.help-center header.site-header.business-header {
 .tab-txts p b {
     color: #000;
 }   
+.tab-blocks .row img {
+    width: 100%;
+}
+.tab-blocks li img {
+    width: auto;
+}
 .tab-blocks img {
     border: 1px solid rgba(0,0,0,.1);
     box-shadow: 0 10px 23px 0 rgb(0 0 0/5%);
     padding: 25px;
+    width: auto;
 }
+.vertical-gd #nav-tab h2 {
+    background: #ed1b24;
+    color: #fff;
+    margin: 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.vertical-gd #nav-tab button.nav-link.tab-sub-hdng.key {
+    padding-left: 20px;
+}
+.tab-content .site-ul li a {
+    color: #ed1b24;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+.tab-content .portal span {
+    background: #ed1b24;
+    color: #fff;
+    padding: 4px 10px;
+}
+.portal .tab-blocks h5.hdng-h5 img {
+    width: auto;
+    padding: 5px 25px;
+    margin-left: 30px;
+}
+.portal .tab-blocks {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.video-padding {
+    padding: 20px 0;
+}
+.portal .tab-blocks:last-child {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.tab-content .portal .site-ul li img {
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.tab-blocks #nav-tab .nav-link {
+    font-size: 14px;
+    color: #000;
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #e3e3e3dd;
+    border-bottom: 0;
+    width: 100%;
+}
+.tab-blocks #nav-tab {
+    gap: 5px;
+    border: 0;
+    margin: 0 !important;
+    padding: 0;
+    flex-wrap: unset;
+}
+.tab-blocks #nav-tab .nav-link.active, .tab-blocks #nav-tab .nav-link:hover {
+    background: #ed1b24;
+    color: #fff;
+    border-color: #ed1b24;
+}
+.tab-blocks .tab-content {
+    background: #fff;
+    border: 1px solid #e3e3e3dd;
+    margin-top: 1px;
+    padding: 30px;
+    width: 100%;
+}
+.tab-blocks .tab-cnt h4 {
+    color: #000;
+    font-weight: 600;
+}
+.tab-blocks .tab-cnt ul {
+    padding-left: 20px;
+}
+.tab-blocks .tab-cnt ul li {
+    color: #6a6a6a;
+    margin-bottom: 5px;
+}
+.tab-blocks ul.tools li {
+    list-style: decimal;
+}
+.tab-blocks .col3-tab .tab-cnt ul li {
+    font-size: 14px;
+}
+.tab-blocks .col3-tab .tab-cnt h5 {
+    color: #ed1b24;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+}
+.tab-blocks .middle-cnt ul li {
+    list-style: square;
+}
+.tab-blocks .middle-cnt ul li::marker {
+    color: #ed1b24;
+}
+.tab-blocks .col3-tab .tab-cnt p.hdng-16 {
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.tab-blocks h4.clr-hdng {
+    color: #ed1b24;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.tab-blocks em {
+    color: #ed1b24;
+}
+
 /*-- Vertical Tabs Css --*/ 
 
 
@@ -828,4 +970,46 @@ body.help-center header.site-header.business-header {
     font-size: 22px;
     font-weight: 600;
 }
+
 /*-- Ask BoB Css --*/ 
+
+
+
+
+/*-- Popup Css --*/ 
+
+.ReactModal__Overlay {
+    background: rgb(0 0 0 / 70%) !important;
+    z-index: 9999;
+}
+.ReactModal__Overlay .ReactModal__Content {
+    width: 450px;
+    border-radius: 0 !important;
+    margin: 0 auto;
+    height: auto;
+    inset: unset !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 100px !important;
+    overflow: visible !important;
+}
+.ReactModal__Overlay .ReactModal__Content button.close {
+    font-size: 0;
+    border: 0;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    outline: 0;
+    background: #ed1b24;
+    height: 40px;
+    border-radius: 50%;
+}
+.ReactModal__Overlay .ReactModal__Content button.close:after {
+    content: '✕';
+    color: #fff !important;
+    font-size: 22px;
+}
+
+
+/*-- Popup Css --*/ 

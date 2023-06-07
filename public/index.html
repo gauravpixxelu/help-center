@@ -25,6 +25,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Help Center</title>
+
   </head>
   <body>
     <div id="root"></div>
@@ -40,4 +41,14 @@
     -->
   </body>
   <script>window[['CHIPBOT','DOMAIN','ID'].join('_')] = 'dom_kyh13Z-NylLf';!function(c,h,i,p,b,o,t){o=h.createElement(i),t=h.getElementsByTagName(i)[0],o.async=1,o.src="https://static.getchipbot.com/edge/p/chipbot.js",t.parentNode.insertBefore(o,t)}(window,document,"script");</script>
-</html>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+  jQuery(document).ready(function() {
+    jQuery(".nav-link").click(function() {
+      jQuery(".hamburger-mobile").removeClass("show");
+    });
+  });
+  </script>
+
+  </html>

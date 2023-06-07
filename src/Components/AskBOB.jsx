@@ -1,14 +1,21 @@
 import React from 'react';
 import { useEffect } from 'react';
-
+import { NavLink } from "react-router-dom";
 const AskBOB = () => {
     useEffect(() => {
-        document.body.classList.add('help-center')
+        document.body.classList.add('ask-bob')
         return () => {
-            document.body.classList.remove('help-center')
+            document.body.classList.remove('ask-bob')
         }
     }, [])
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+
     return (
+        
 
         <div className="ask-bob-page">
 
@@ -21,7 +28,7 @@ const AskBOB = () => {
                             <div className="meet-txt">
                                 <h1>Meet BoB</h1>
                                 <p className="hdng-18">The most powerful AI engine in the world is now available at your fingertips. Bob (Business optimisation Bot), is a powerful language processing tool. It is a type of artificial intelligence (AI) that is designed to understand and generate natural human language.</p>
-                                <a href="#" className="custom-btn"><span>Learn More</span></a>
+                                <NavLink href="#" className="custom-btn"><span>Learn More</span></NavLink>
                             </div>
                         </div>
                         <div className="col-md-7">
@@ -124,7 +131,7 @@ const AskBOB = () => {
             {/* Power of BoB Section Ends */}
 
             {/* Work Section Starts */}
-
+            
             <section className="work-bob" >
                 <div className="container">
                     <h2 className="sec-hdng">BoB has the potential to work with business consultants to improve business performance in a number of ways:</h2>
@@ -197,7 +204,7 @@ const AskBOB = () => {
                 <div className="container">
                     <div className="try-bob-txt">
                         <p>Overall, bob can help business consultants be more efficient, effective, and insightful in their work, enabling them to provide better value to their clients and improve business performance.</p>
-                        <a href="#" className="custom-btn"><span>Try It Now</span></a>
+                        <NavLink href="#" className="custom-btn"><span>Try It Now</span></NavLink>
                     </div>
                 </div>
             </section>

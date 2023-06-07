@@ -1,40 +1,281 @@
 @media screen and (max-width:767px) {
 
-    /*-- Website Css --*/ 
-    .custom-btn {
-        font-size: 14px;
-    }
-    /*-- Website Css --*/ 
+/*-- Website Css --*/
+h4.small-hdn {
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+body .container {
+    padding: 0 15px;
+}
+h2.sec-hdng {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+h2.hdng {
+    font-size: 24px;
+}
+h5.hdng-h5 {
+    font-size: 18px;
+}
+p.hdng-16 {
+    font-size: 14px;
+}
+p.hdng-18 {
+    font-size: 16px;
+}
+.custom-btn, .custom-btn-2 {
+    font-size: 14px;
+    padding: 10px 25px;
+}
+.site-ul li {
+    font-size: 14px;
+    gap: 10px;
+}
+.site-ul li img {
+    width: 18px;
+}
+.accordion-item .accordion-button {
+    font-size: 16px;
+}
+.accordion-body tr th {
+    font-size: 14px;
+    padding: 5px 15px;
+}
+.accordion-body tr td {
+    font-size: 12px;
+    padding: 5px 15px;
+}
+.accordion-body p {
+    font-size: 14px;
+}
+.logo-carousel {
+    padding: 60px 0 30px;
+}
 
-    /*-- Header Css --*/ 
-    .site-header .navbar {
-        flex-wrap: unset;
-    }
-    /*-- Header Css --*/ 
+/*-- Website Css --*/
 
 
-    /*-- Vertical Tabs Css --*/ 
-    .hamburger-mobile img {
-        width: 36px;
-    }
-    .hamburger-mobile {
-        display: inline-block;
-        background: #ed1b24;
-        position: absolute;
-        z-index: 9999;
-        top: 15px;
-        padding: 20px;
-        right: 0;
-    }    
-    .vertical-gd {
-        transform: translateX(-300px);
-        transition: 0.6s;
-        box-shadow: 0px 12px 23px 0px rgb(0 0 0 / 5%);
-    }    
-    .vertical-tabs .tab-content {
-        width: 100%;
-        padding: 0 15px;
-    }
-    /*-- Vertical Tabs Css --*/ 
+/*-- Header Css --*/ 
+.site-header .navbar {
+    flex-wrap: unset;
+}
+.business-header nav.navbar ul.navbar-nav {
+    gap: 10px;
+}
+.business-header .nav-link.custom-btn {
+    padding: 8px 15px !important;
+    width: 100%;
+    text-align: center;
+}
+.help-center .business-header nav.navbar ul.navbar-nav {
+    gap: 0;
+}
+
+/*-- Header Css --*/ 
+
+
+/*-- Home Css --*/ 
+.help {
+    padding: 30px 0;
+}
+.help-txt {
+    padding: 15px;
+    margin-bottom: 20px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.help-txt .help-txt-img {
+    width: 100%;
+}
+.help-txt .help-txt-img img {
+    width: 100%;
+}
+.ReactModal__Overlay .ReactModal__Content {
+    width: 70%;
+    left: -130px !important;
+}
+/*-- Home Css --*/ 
+
+
+
+/*-- Footer Css --*/
+
+.business-footer .footer-address ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+a.footer-logo {
+    width: 250px;
+    display: block;
+    margin-bottom: 20px;
+}
+.site-footer ul li a {
+    font-size: 14px;
+}
+.site-footer ul li {
+    font-size: 14px;
+}
+.business-footer .footer-address ul li img {
+    width: 24px;
+}
+.business-footer .footer-social ul li img {
+    width: 24px;
+}
+.business-footer .footer-social ul {
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+}
+.site-footer .bottom-bar p {
+    font-size: 12px;
+}
+.business-footer {
+    padding: 20px 0;
+}
+
+
+/*-- Footer Css --*/
+
+
+/*-- Vertical Tabs Css --*/ 
+.hamburger-mobile {
+    display: inline-block;
+    background: #ed1b24;
+    position: fixed;
+    z-index: 9999;
+    top: 250px;
+    padding: 40px 0px;
+    right: 0;
+    border-radius: 10px 0 0 10px;
+}   
+.hamburger-mobile p {
+    margin: 0;
+    transform: rotate(270deg);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.vertical-gd {
+    transform: translateX(-300px);
+    transition: 0.6s;
+    box-shadow: 0px 12px 23px 0px rgb(0 0 0 / 5%);
+    z-index: 9999;
+}  
+.hamburger-mobile.show + nav.vertical-gd {
+    transform: translateX(0);
+}  
+.vertical-tabs .tab-content {
+    width: 100%;
+    padding: 30px 15px;
+}
+.tab-content .site-ul li {
+    font-size: 14px;
+}
+.tab-content iframe {
+    height: 230px;
+    width: 100%;
+}
+.tab-blocks img {
+    padding: 10px;
+    width: 100%;
+}
+
+/*-- Vertical Tabs Css --*/ 
+
+
+/*-- Meet Bob  Css --*/ 
+
+.meet-bob .meet-txt {
+    padding-right: 0;
+    padding-top: 20px;
+}
+.try-bob  .try-bob-txt {
+    padding: 20px;
+}
+.try-bob .try-bob-txt p {
+    margin: 0px auto 15px;
+    font-size: 18px;
+}
+.power-bob {
+    padding: 30px 0;
+}
+.power-bob p {
+    font-size: 16px;
+}
+.power-bob.ai .row {
+    flex-wrap: wrap-reverse;
+}
+.try-bob {
+    padding: 30px 0;
+}
+.work-bob .work-img img {
+    position: relative;
+}
+.work-bob .row {
+    padding: 15px 0 0 0;
+    margin: 0;
+}
+.work-bob .work-txt {
+    padding: 20px 0;
+    gap: 20px;
+    margin-left: 0;
+    flex-wrap: wrap-reverse;
+}
+.work-bob .work-txt .work-txt-img {
+    max-width: 60px;
+    height: 60px;
+    padding: 8px;
+}
+.tab-blocks {
+    margin-top: 30px;
+}
+.meet-box {
+    padding: 10px;
+    max-width: 100%;
+    border-radius: 10px 10px 0px 10px;
+    position: relative;    
+    margin-bottom: 10px;
+}
+.ask-bob-page img {
+    width: 100%;
+}
+.meet-bob .row {
+    flex-wrap: wrap-reverse;
+}
+.meet-box img {
+    width: auto;
+}
+.meet-bob {
+    padding: 0 0 30px;
+}
+.meet-bob .meet-txt h1 {
+    font-size: 56px;
+    margin-bottom: 10px;
+}
+.meet-bob .meet-txt p {
+    margin-bottom: 20px;
+    color: #000;
+}
+.box-2 {
+    right: 0;
+    top: 0;
+}
+.box-3 {
+    left: 0;
+    top: 0;
+}
+.box-4 {
+    right: 0;
+    top: 0;
+}
+.box-5 {
+    left: 0;
+    top: 0;
+}
+/*-- Meet Bob  Css --*/ 
+
+
 
 }

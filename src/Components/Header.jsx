@@ -1,18 +1,21 @@
 import React from 'react';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 function Header() {
   return (
 
     <header className="site-header business-header">
       <div className="container">
         <nav className="navbar navbar-expand-lg">
-          <a className="navbar-brand" href="/"><img src="images/help-logo.svg" alt="" /></a>
+          <NavLink className="navbar-brand" to="/"><img src="images/help-logo.svg" alt="" /></NavLink>
           <ul className="navbar-nav">
+          <li className="nav-item">
+              <NavLink to="/" className="nav-link custom-btn back-page"><span><FontAwesomeIcon icon={faAnglesLeft} /> Help Center</span></NavLink>
+            </li>
             <li className="nav-item">
-              <a className="nav-link custom-btn" href="/implementation-partners" aria-current="page"> 
-              <span>Log a Support Request</span>
-              </a>
-            </li> 
+              <NavLink to="/" className="nav-link custom-btn"><span>Log a Support Request</span></NavLink>
+            </li>
           </ul>
         </nav>
       </div>

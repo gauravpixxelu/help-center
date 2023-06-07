@@ -1,4 +1,6 @@
 import React from 'react';
+import Menu from './Menu';
+
 
 function ConsultingManual() {
 	return (
@@ -9,9 +11,7 @@ function ConsultingManual() {
 
 
 			<section className="vertical-tabs">
-				<div class="hamburger-mobile">
-					<img src="icons/hamburger.svg" alt="" />
-				</div>
+				<Menu />
 
 				<nav className="vertical-gd">
 					<div className="nav flex-column nav-tabs mb-3" id="nav-tab" role="tablist" aria-orientation="vertical">
