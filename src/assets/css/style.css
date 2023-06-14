@@ -661,7 +661,7 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
     font-weight: 600;
 }
 .tab-content ul.site-ul li:before {
-    background: url(/public/icons/check-tick.png) no-repeat;
+    background: url(../icons/check-tick.png) no-repeat;
     content: '';
     width: 24px;
     height: 24px;

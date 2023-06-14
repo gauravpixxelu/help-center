@@ -1,6 +1,20 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
+import Ask1 from "../assets/icons/ask-1.svg"
+import Ask2 from "../assets/icons/ask-2.svg"
+import Ask3 from "../assets/icons/ask-3.svg"
+import Ask4 from "../assets/icons/ask-4.svg"
+import Ask5 from "../assets/icons/ask-5.svg"
+import Work_bob1 from "../assets/icons/work-bob-1.svg"
+import Work_bob2 from "../assets/icons/work-bob-2.svg"
+import Work_bob3 from "../assets/icons/work-bob-3.svg"
+import Work_bob4 from "../assets/icons/work-bob-4.svg"
+import Work_bob5 from "../assets/icons/work-bob-5.svg"
+
+
+
+
 const AskBOB = () => {
     useEffect(() => {
         document.body.classList.add('ask-bob')
@@ -35,27 +49,27 @@ const AskBOB = () => {
                             <div className="meet-image">
                                 <img src="images/bot.png" alt="" />
                                 <div className="meet-box box-1">
-                                    <img src="icons/ask-1.svg" alt="" />
+                                    <img src={Ask1} alt="Ask1" />
                                     <p>Improved decision making</p>
                                 </div>
 
                                 <div className="meet-box box-2">
-                                    <img src="icons/ask-2.svg" alt="" />
+                                    <img src={Ask2} alt="Ask2" />
                                     <p>Enhanced communication & collaboration</p>
                                 </div>
 
                                 <div className="meet-box box-3">
-                                    <img src="icons/ask-3.svg" alt="" />
+                                    <img src={Ask3} alt="Ask3" />
                                     <p>Improved efficiency & productivity</p>
                                 </div>
 
                                 <div className="meet-box box-4">
-                                    <img src="icons/ask-4.svg" alt="" />
+                                    <img src={Ask4} alt="Ask4" />
                                     <p>Enhanced analysis & insights</p>
                                 </div>
 
                                 <div className="meet-box box-5">
-                                    <img src="icons/ask-5.svg" alt="" />
+                                    <img src={Ask5} alt="Ask5" />
                                     <p>Increased specialization and expertise</p>
                                 </div>
                             </div>
@@ -148,7 +162,7 @@ const AskBOB = () => {
                             <p className="hdng-16">BoB can help consultants automate routine tasks and processes, freeing up more time for high-value work such as strategy development and problem solving.</p>
                             </div>
                             <div className="work-txt-img">
-                            <img src="icons/work-bob-1.svg" alt="" />
+                            <img src={Work_bob1} alt="" />
                             </div>
                         </div>
 
@@ -158,7 +172,7 @@ const AskBOB = () => {
                             <p className="hdng-16">BoB’s tools can help consultants analyse and interpret large amounts of data more quickly and accurately, providing insights and recommendations that may not have been apparent otherwise.</p>
                             </div>
                             <div className="work-txt-img">
-                            <img src="icons/work-bob-2.svg" alt="" />
+                            <img src={Work_bob2} alt="" />
                             </div>
                         </div>
 
@@ -168,7 +182,7 @@ const AskBOB = () => {
                             <p className="hdng-16">BoB’s tools can facilitate communication and collaboration among consultants and clients, allowing them to work more effectively together regardless of location.</p>
                             </div>
                             <div className="work-txt-img">
-                            <img src="icons/work-bob-3.svg" alt="" />
+                            <img src={Work_bob3} alt="" />
                             </div>
                         </div>
 
@@ -178,7 +192,7 @@ const AskBOB = () => {
                             <p className="hdng-16">BoB can help consultants specialize in particular areas by providing access to a wide range of information and analysis that may not be readily available to them otherwise.</p>
                             </div>
                             <div className="work-txt-img">
-                            <img src="icons/work-bob-4.svg" alt="" />
+                            <img src={Work_bob4} alt="" />
                             </div>
                         </div>
 
@@ -188,7 +202,7 @@ const AskBOB = () => {
                             <p className="hdng-16">BoB can help consultants automate routine tasks and processes, freeing up more time for high-value work such as strategy development and problem solving.</p>
                             </div>
                             <div className="work-txt-img">
-                            <img src="icons/work-bob-5.svg" alt="" />
+                            <img src={Work_bob5} alt="" />
                             </div>
                         </div>
                        </div>
