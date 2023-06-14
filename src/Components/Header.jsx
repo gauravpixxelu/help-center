@@ -2,6 +2,9 @@ import React from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAnglesLeft } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
+import SupportPopup from './SupportPopup';
+
+
 function Header() {
   return (
 
@@ -14,7 +17,7 @@ function Header() {
               <NavLink to="/" className="nav-link custom-btn back-page"><span><FontAwesomeIcon icon={faAnglesLeft} /> Help Center</span></NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/" className="nav-link custom-btn"><span>Log a Support Request</span></NavLink>
+              <SupportPopup />
             </li>
           </ul>
         </nav>
