@@ -68,6 +68,9 @@ const HelpCenter = () => {
                                         <li><a href="/pdf/8-step-to-consulting-success.pdf" target="_blank" download>8 Steps to Consulting Success</a></li>
                                         <li><a href="/pdf/okr-guide.pdf" target="_blank" download>OKR Guide</a></li>
                                         <li><a href="/pdf/sale-process.pdf" target="_blank" download>Sales Process</a></li>
+                                        <li><a href="/pdf/business-diagnostic-call-script.pdf" target="_blank" download>Business Diagnostic Call Script</a></li>
+                                        <li><a href="/pdf/business-builder-diagnostic.pdf" target="_blank" download>Business Builder Diagnostic</a></li>
+                                        <li><a href="/pdf/growth-accelerator-diagnostic.pdf" target="_blank" download>Growth Accelerator Diagnostic</a></li>
                                     </ul>
                                 </div>
                             </div>
