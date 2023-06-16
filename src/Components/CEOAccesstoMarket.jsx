@@ -111,7 +111,7 @@ function CEOAccesstoMarket() {
 									<div className="col-md-9">
 										<h5 className="hdng-h5">Logging in and the dashboard</h5>
 										<ul className="site-ul">
-											<li>Go to the <a href="https://red-project.com" target="_blank">Red3Sixty wed portal</a></li>
+											<li>Go to the <a href="https://red-project.com" target="_blank" rel="noreferrer">Red3Sixty wed portal</a></li>
 											<li>Enter your email and password to enter the portal</li>
 											<li>Click on <span>Forgot your password?</span> to reset your password</li>
 											<li>The portal will open to your dashboard where you will get an overview of your resent activity</li>

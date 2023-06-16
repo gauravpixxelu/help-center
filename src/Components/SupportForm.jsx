@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 const SupportForm = () => {
     const [name, setName] = useState('');
@@ -6,30 +6,30 @@ const SupportForm = () => {
     const [contact_number, setPhone] = useState('');
     const [message, setMessage] = useState('');
     const [thankmessage, setThank] = useState('');
-    const [form_type, setFormType] = useState('');
-    const [site_type, setSiteType] = useState('');
-    const [page_type, setPageType] = useState('');
+    // const [form_type, setFormType] = useState('');
+    // const [site_type, setSiteType] = useState('');
+    // const [page_type, setPageType] = useState('');
 
-    useEffect(() => {
-        setFormType(getFormType());
-        setSiteType(getSiteType());
-        setPageType(getPageType());
-    }, []);
+    // useEffect(() => {
+    //     setFormType(getFormType());
+    //     setSiteType(getSiteType());
+    //     setPageType(getPageType());
+    // }, []);
 
-    const getFormType = () => {
-        // Function to determine the form type based on the URL or any other logic
-        // Return the determined form type
-    };
+    // const getFormType = () => {
+    //     // Function to determine the form type based on the URL or any other logic
+    //     // Return the determined form type
+    // };
 
-    const getSiteType = () => {
-        // Function to determine the site type based on the URL or any other logic
-        // Return the determined site type
-    };
+    // const getSiteType = () => {
+    //     // Function to determine the site type based on the URL or any other logic
+    //     // Return the determined site type
+    // };
 
-    const getPageType = () => {
-        // Function to determine the page type based on the URL or any other logic
-        // Return the determined page type
-    };
+    // const getPageType = () => {
+    //     // Function to determine the page type based on the URL or any other logic
+    //     // Return the determined page type
+    // };
 
     const handleSubmit = async e => {
         e.preventDefault();
