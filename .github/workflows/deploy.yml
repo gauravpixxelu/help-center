@@ -17,6 +17,6 @@ jobs:
       - run : npm install
       - run : npm run build
       - run : sudo rm -r /var/www/html/help-center/build
-      - run : sudo mv /home/aakash/actions-runner/_work/help-center/help-center/build /var/www/html/help-center/
+      - run : sudo mv /home/aakash/actions-runner-help/_work/help-center/help-center/build /var/www/html/help-center/
       - run : sudo cp /var/www/.htaccess /var/www/html/help-center/build
 
