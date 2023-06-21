@@ -1,0 +1,22 @@
+name : Help Center CI
+on:
+  push:
+    branches : 
+      - "main"
+    
+jobs:
+  build:
+    runs-on: self-hosted
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - run : npm install
+      - run : npm run build
+      - run : sudo rm -r /var/www/html/help-center/build
+      - run : sudo mv /home/aakash/actions-runner/_work/help-center/help-center/build /var/www/html/help-center/
+      - run : sudo cp /var/www/.htaccess /var/www/html/help-center/build
+
