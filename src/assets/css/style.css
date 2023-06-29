@@ -1092,11 +1092,15 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
     box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.17) !important;
 }
 .ask-bob .ReactModal__Overlay {
-    background: transparent !important;
+    background: #000000bd !important;
     z-index: 9999;
     position: fixed !important;
     top: 0 !important;
     right: 0 !important;
+}
+.gpt-btns {
+    position: relative;
+    z-index: 99999;
 }
 .gpt-btns img.abxo {
     position: fixed;
