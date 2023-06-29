@@ -1190,7 +1190,9 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
     color: #fff;
 }
 
-
+.business-header nav.navbar ul.navbar-nav li:last-child {
+    display: none;
+}
 
 
 
