@@ -1160,6 +1160,7 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
     background: #eaeaea;
     padding: 40px 20px;
     height: 500px;
+    overflow: scroll;
 }
 .gpt-txt {
     display: flex;
@@ -1193,7 +1194,6 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
 .ask-bob .business-header nav.navbar ul.navbar-nav li:last-child {
     display: none;
 }
-
 
 
 /*-- Chat GPT Popup Css --*/ 
