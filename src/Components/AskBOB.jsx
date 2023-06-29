@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
+import ChatGPTPopup from "../Components/ChatGPTPopup"
 import Ask1 from "../assets/icons/ask-1.svg"
 import Ask2 from "../assets/icons/ask-2.svg"
 import Ask3 from "../assets/icons/ask-3.svg"
@@ -11,7 +12,7 @@ import Work_bob2 from "../assets/icons/work-bob-2.svg"
 import Work_bob3 from "../assets/icons/work-bob-3.svg"
 import Work_bob4 from "../assets/icons/work-bob-4.svg"
 import Work_bob5 from "../assets/icons/work-bob-5.svg"
-import ChatGPTPopup from "../Components/ChatGPTPopup"
+
 
 
 
