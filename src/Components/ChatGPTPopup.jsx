@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, createContext, useContext } from 'react';
+import React, { useState, useRef, useEffect, createContext } from 'react';
 import Modal from 'react-modal';
 
 // Create a context for chat messages
