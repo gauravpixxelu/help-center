@@ -1,5 +1,6 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 import './assets/css/style.css';
 import './assets/css/mobile.css';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
