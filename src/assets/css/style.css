@@ -1069,6 +1069,13 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
 /*-- Popup Form Css --*/ 
 
 
+body.not-found .container {
+    max-width: 1320px;
+}
+body.not-found  header.site-header.business-header {
+    position: relative;
+}
+
 
 
 

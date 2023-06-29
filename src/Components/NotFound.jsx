@@ -1,9 +1,17 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 const NotFound = () => {
+  useEffect(() => {
+    document.body.classList.add('not-found')
+    return () => {
+        document.body.classList.remove('not-found')
+    }
+}, [])
+
+
   return (
 
-    <div className="not-found">
 
     <section className="notfoundblock" >
       <div className="container">
@@ -11,9 +19,6 @@ const NotFound = () => {
       </div>
     </section>
 
-
-    </div>
-    
   );
 };
  
