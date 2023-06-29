@@ -18,6 +18,7 @@ import CEOBusinessBuilder from './Components/CEOBusinessBuilder';
 import CEOGrowthAccelerator from './Components/CEOGrowthAccelerator';
 import CEOTurnAroundRecovery from './Components/CEOTurnAroundRecovery';
 import CEOAccesstoMarket from './Components/CEOAccesstoMarket'; 
+import NotFound from './Components/NotFound'; 
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           <Route path="/ceo-growth-accelerator" element={<CEOGrowthAccelerator />} />
           <Route path="/ceo-turn-around-recovery" element={<CEOTurnAroundRecovery />} />
           <Route path="/ceo-access-to-market" element={<CEOAccesstoMarket />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </Router>

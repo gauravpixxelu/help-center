@@ -1076,7 +1076,7 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
 
 
 .ask-bob .ReactModal__Overlay .ReactModal__Content {
-    width: 400px;
+    width: 95%;
     margin: 0 auto;
     height: auto;
     inset: unset !important;
@@ -1093,7 +1093,7 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
 }
 .ask-bob .ReactModal__Overlay {
     background: transparent !important;
-    z-index: 999;
+    z-index: 9999;
     position: fixed !important;
     top: 0 !important;
     right: 0 !important;
@@ -1158,9 +1158,9 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
 }
 .gpt-body-msg {
     background: #eaeaea;
+    height: 450px;
+    overflow-y: scroll;
     padding: 40px 20px;
-    height: 500px;
-    overflow: scroll;
 }
 .gpt-txt {
     display: flex;
@@ -1190,9 +1190,17 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
     background: #333;
     color: #fff;
 }
-
 .ask-bob .business-header nav.navbar ul.navbar-nav li:last-child {
     display: none;
+}
+.gpt-body-msg::-webkit-scrollbar {
+    width: 7px;
+    background-color: #ebebeb;
+}
+.gpt-body-msg::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #ed1b24;
 }
 
 
