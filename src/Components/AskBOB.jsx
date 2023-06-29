@@ -11,6 +11,7 @@ import Work_bob2 from "../assets/icons/work-bob-2.svg"
 import Work_bob3 from "../assets/icons/work-bob-3.svg"
 import Work_bob4 from "../assets/icons/work-bob-4.svg"
 import Work_bob5 from "../assets/icons/work-bob-5.svg"
+import ChatGPTPopup from "../Components/ChatGPTPopup"
 
 
 
@@ -42,7 +43,7 @@ const AskBOB = () => {
                             <div className="meet-txt">
                                 <h1>Meet BoB</h1>
                                 <p className="hdng-18">The most powerful AI engine in the world is now available at your fingertips. Bob (Business optimisation Bot), is a powerful language processing tool. It is a type of artificial intelligence (AI) that is designed to understand and generate natural human language.</p>
-                                <NavLink href="#" className="custom-btn"><span>Learn More</span></NavLink>
+                                {/* <NavLink href="#" className="custom-btn"><span>Learn More</span></NavLink> */}
                             </div>
                         </div>
                         <div className="col-md-7">
@@ -224,6 +225,9 @@ const AskBOB = () => {
             </section>
 
             {/* Try Now Section Ends */}
+
+
+            <ChatGPTPopup />
 
 
         </div>

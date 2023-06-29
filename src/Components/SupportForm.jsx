@@ -46,7 +46,7 @@ const SupportForm = () => {
 
         try {
             const response = await fetch(
-                'https://pixxelu.com/dev/red3sixty/api/client-contact-us-email',
+                'https://red3sixtyonlinechatgpt.mbeadmin.com/api/client-contact-us-email',
                 {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
