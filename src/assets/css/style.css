@@ -1157,8 +1157,36 @@ body.help-center header.site-header.business-header, body.ask-bob header.site-he
 .gpt-body-msg {
     background: #eaeaea;
     padding: 40px 20px;
+    height: 500px;
 }
-
+.gpt-txt {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 10px 0;
+}
+.gpt-txt img {
+    width: 36px;
+    height: 36px;
+}
+.gpt-body-user {
+    justify-content: flex-end;
+}
+.gpt-txt h4 {
+    font-size: 16px;
+    border-radius: 0px 7px 7px 7px;
+    background: #FFF;
+    box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.10);
+    margin: 0;
+    padding: 15px 25px;
+}
+.gpt-body-bot {
+    justify-content: flex-start;
+}
+.gpt-body-user h4 {
+    background: #333;
+    color: #fff;
+}
 
 
 

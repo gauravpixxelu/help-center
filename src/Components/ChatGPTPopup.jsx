@@ -30,7 +30,15 @@ const ChatGPTPopup = () => {
           </div>
 
           <div className="gpt-body-msg">
-          
+             <div className="gpt-body-user gpt-txt">                
+                <h4>Hi</h4>
+                <img src="images/user.png" alt="gpt-close" />
+             </div>
+
+             <div className="gpt-body-bot gpt-txt">   
+                <img src="images/gpt.png" alt="gpt-close" />             
+                <h4>Hey there! Welcome to Red3sixty</h4>                
+             </div>
           </div>
 
           <div className="gpt-send-msg">
