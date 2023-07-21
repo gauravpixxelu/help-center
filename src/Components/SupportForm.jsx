@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 const SupportForm = () => {
     const [name, setName] = useState('');
     const [contact_email, setEmail] = useState('');
-    const [contact_number, setPhone] = useState('');
-    const [message, setMessage] = useState('');
+    // const [contact_number, setPhone] = useState('');
+    // const [message, setMessage] = useState('');
     const [thankmessage, setThank] = useState('');
     // const [form_type, setFormType] = useState('');
     // const [site_type, setSiteType] = useState('');
@@ -36,8 +36,8 @@ const SupportForm = () => {
         const data = {
             name,
             contact_email,
-            contact_number,
-            message,
+            // contact_number,
+            // message,
             thankmessage,
             form_type: "support_request",
             site_type: "Help Center",
@@ -58,8 +58,8 @@ const SupportForm = () => {
             setThank('Thank you for your message. It has been sent.');
             setName('');
             setEmail('');
-            setPhone('');
-            setMessage('');
+            // setPhone('');
+            // setMessage('');
         } catch (error) {
             console.log(error);
             setThank('Message failed to send. Please try again later.');
@@ -93,7 +93,7 @@ const SupportForm = () => {
                     </div>
                 </div>
 
-                <div className="col-md-12">
+                {/* <div className="col-md-12">
                     <div className="form-feild">
                         <input
                             type="text"
@@ -113,7 +113,7 @@ const SupportForm = () => {
                             placeholder="Type Your Message Here..."
                         />
                     </div>
-                </div>
+                </div> */}
 
                 <div className="col-md-12">
                     <div className="form-button">
